@@ -50,7 +50,7 @@ class login extends StatelessWidget {
                   children: [
                     TextFormField(
                       decoration: InputDecoration(
-                          hintText: 'Email',
+                          hintText: 'Password',
                           fillColor: Colors.blue.shade50,
                           filled: true,
                           prefixIcon: Icon(Icons.password,color:Colors.blue.shade200),
