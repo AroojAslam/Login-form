@@ -14,7 +14,7 @@ Widget buildStack(context){
               shape: BoxShape.rectangle,
               borderRadius: BorderRadius.circular(20),
               color: Colors.blue.shade100,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Colors.black26,
                   offset: Offset(2.0, 2.0),
@@ -34,7 +34,7 @@ Widget buildStack(context){
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.blue.shade900,
-              boxShadow:  [
+              boxShadow:const  [
                 BoxShadow(
                   color: Colors.black26,
                   offset: Offset(8.0, 8.0),
@@ -44,7 +44,7 @@ Widget buildStack(context){
 
               ]
           ),
-          child: Center(
+          child:const Center(
             child: Text('Log In',
               style: TextStyle(fontSize: 40,fontWeight:FontWeight.bold,
                   color: Colors.white),),
@@ -54,7 +54,7 @@ Widget buildStack(context){
       Positioned(child:  Container(
           height:MediaQuery.of(context ).size.height * 0.5 ,
           width: MediaQuery.of(context ).size.width,
-          child: Column(
+          child:const  Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
