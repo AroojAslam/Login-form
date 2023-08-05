@@ -1,15 +1,21 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:login_form/signUp.dart';
 import 'log_In.dart';
-void main() {
-  runApp(const login());
+
+void main()async {
+  WidgetsFlutterBinding.ensureInitialized();
+ await Firebase.initializeApp();
+  runApp( MyApp());
 }
 
-class login extends StatelessWidget {
-  const login({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+
       debugShowCheckedModeBanner: false,
       home: Log_In(),
     );

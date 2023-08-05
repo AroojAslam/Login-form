@@ -52,7 +52,7 @@ Widget buildStack(context){
         ),
       ),
       Positioned(child:  Container(
-          height:MediaQuery.of(context ).size.height * 0.5 ,
+          height:MediaQuery.of(context ).size.height * .48 ,
           width: MediaQuery.of(context ).size.width,
           child:const  Column(
             mainAxisAlignment: MainAxisAlignment.end,
