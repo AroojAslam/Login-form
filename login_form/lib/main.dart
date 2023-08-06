@@ -1,11 +1,12 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:login_form/signUp.dart';
+import 'package:login_form/splash%20screen.dart';
+import 'constants.dart';
 import 'log_In.dart';
 
 void main()async {
-  WidgetsFlutterBinding.ensureInitialized();
- await Firebase.initializeApp();
+
   runApp( MyApp());
 }
 
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-
+    return  MaterialApp(
+      theme: ThemeData(primaryColor:darkBlue() ),
       debugShowCheckedModeBanner: false,
-      home: Log_In(),
+      home: splashScreen(),
     );
   }
 }
